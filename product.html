@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <link rel="icon" href="https://i.postimg.cc/NMCkwN4V/website-icon-14.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروعك</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Reem Kufi', sans-serif;
+    background-color: #dbfaff;
+}
+
+
+
+h3{
+    font-size:2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: rgb(255, 94, 0);
+}
+
+p{
+    font-size: 1.6rem;
+    color: crimson;
+    line-height: 2;
+}
+
+/*nav section */
+.nav-container{
+    background-color: #05f4fc;
+    color: rgb(243, 116, 12);
+}
+nav{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    font-size: 1.8rem;
+}
+nav .logo{
+    font-family: 'Aref Ruqaa', serif;
+    font-weight: bold;
+    color: rgb(43, 184, 55);
+    flex: 2;
+    margin-bottom: 0;
+}    
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0;
+}
+nav ul li a{
+    color: rgb(255, 0, 255);
+    display: block;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(255, 8, 0);
+}
+.h1{
+    margin-bottom: 3px;
+}
+
+/*hero section*/
+.hero{
+    height: 90vh;
+    position: relative;
+}
+.hero::after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: heroBg 5s ease-in;
+    background-image:linear-gradient(90deg,rgba(51,78,104,0.2)0% ,rgba(28, 184, 75, 0.8)20%),url("https://i.postimg.cc/MKC84Hmn/hghgh.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+
+
+ .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+             margin-bottom: 9rem;
+             margin-top: 1rem;
+             margin-left: 1rem;
+             margin-right: 1rem;
+
+
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-content h3 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .card-content p {
+            font-size: 1.4rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            flex: 1;
+        }
+        .price {
+            font-size: 1.6rem;
+            color: #ff6600;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+.content{
+    width: 90% ;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90vh;
+}
+
+
+h3 span{
+    color: #00f189;
+}
+
+.btn{
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.75rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    color: #f34d06;
+    background-color: #aff708
+  
+
+}
+
+.btn a {
+    color: #f71212;
+    font-size: 1.6rem;
+    text-decoration:none
+}
+.btn:hover {
+    background-color: #25aac5
+}
+.btn:active {
+    transform: scale(0.98);
+}
+h1{
+    margin-left: 10rem;
+}
+   
+
+
+
+/*footer section*/
+footer{
+    background: rgb(70, 224, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+footer p {
+    color: rgba(44, 28, 184, 0.8);
+}
+
+/*animation section*/
+@keyframes heroBg {
+    from{
+        scale:1.2;
+    }
+    to{
+        scale:1;
+    }
+}
+
+/*responsive design*/
+@media screen and (max-width:1184px){
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+
+
+ </style>
+</head>
+<body>
+    
+   <div class="container">
+       <div class="nav-container">
+           <nav>
+               <h3 class="logo">مشروعك</h3>
+               <ul>
+
+                   
+               </ul>
+           </nav>
+           
+       </div>
+     <h1 style="font-size: 6rem; text-align: center; margin-top: 20px;color: #ff6600;">
+  منتجاتنا
+</h1>
+
+<div class="products-container">
+        <div class="card">
+            <img src="https://i.postimg.cc/NFwszSs7/luxury-jasmine-perfume-bottle-generative-ai-photo.jpg" alt="منتج 1">
+            <div class="card-content">
+                <h3>اسم المنتج 1</h3>
+                <p>وصف مختصر عن المنتج 1 يوضح أهم المميزات والفوائد التي يقدمها.</p>
+                <div class="price">15 د.أ</div>
+                <a style="text-decoration: none;text-align: center;"  href="#" class="btn">أضف للسلة</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.postimg.cc/fLdW5DNR/1000-F-495398749-u-FQNCkk-NQXUWP2ykem-Tc-Oe-NWGFoel-H15.jpg" alt="منتج 2">
+            <div class="card-content">
+                <h3>اسم المنتج 2</h3>
+                <p>وصف مختصر عن المنتج 2 يوضح أهم المميزات والفوائد التي يقدمها.</p>
+                <div class="price">20 د.أ</div>
+                <a style="text-decoration: none;text-align: center;" href="#" class="btn">أضف للسلة</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.postimg.cc/bvWNQd45/perfume-flowers-rose-pink-watercolor-clipart-fashion-illustration-191095-5883.avif" alt="منتج 2">
+            <div class="card-content">
+                <h3>اسم المنتج 2</h3>
+                <p>وصف مختصر عن المنتج 2 يوضح أهم المميزات والفوائد التي يقدمها.</p>
+                <div class="price">20 د.أ</div>
+                <a style="text-decoration: none;text-align: center;" href="#" class="btn">أضف للسلة</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.postimg.cc/rpsy75Ss/OIP.webp" alt="منتج 4">
+            <div class="card-content">
+                <h3>اسم المنتج 4</h3>
+                <p>وصف مختصر عن المنتج 4 يوضح أهم المميزات والفوائد التي يقدمها.</p>
+                <div class="price">18 د.أ</div>
+                <a style="text-decoration: none;text-align: center;" href="#" class="btn">أضف للسلة</a>
+            </div>
+           
+
+        </div> 
+        <button style="margin-bottom: 50px;margin-left: 50 px;margin-right: 50px;" class="btn btn-primary" type="submit"><a href="index.html"> الصفحة الرئيسية</a></button>
+    </div>
+</body>
+
+
+
+       <footer>
+           <p>اصدار عام 2021</p>
+       </footer>
+   </div> 
+</body>
+</html>
